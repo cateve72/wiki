@@ -1,0 +1,53 @@
+package com.formation.wiki.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Statut implements Serializable{
+
+	/**
+	 * Statut de l'article
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	private Integer id;
+	private Boolean published;
+	private Boolean waitingforvalidation;
+	private Boolean reportedasabused;
+	
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Boolean getPublished() {
+		return published;
+	}
+	public void setPublished(Boolean published) {
+		this.published = published;
+	}
+	public Boolean getWaitingforvalidation() {
+		return waitingforvalidation;
+	}
+	public void setWaitingforvalidation(Boolean waitingforvalidation) {
+		this.waitingforvalidation = waitingforvalidation;
+	}
+	public Boolean getReportedasabused() {
+		return reportedasabused;
+	}
+	public void setReportedasabused(Boolean reportedasabused) {
+		this.reportedasabused = reportedasabused;
+	}
+	public Statut() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}
