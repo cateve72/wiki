@@ -21,6 +21,7 @@ public class Main {
 		UtilisateurDAO dao= new UtilisateurDAO();
 		dao.addUser(user);
 		
+		//essai commit Git
 		try{
 			System.out.println(dao.isUserExist("James6", "Joe6"));
 		}catch (SQLException e) {
